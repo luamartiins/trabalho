@@ -23,7 +23,7 @@ class Database {
             // modo de erro do PDO 
             $this->pdo->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
 
-            echo "Conexão com o banco de dados MySQL realizada com sucesso!<br>";
+            echo "<br>";
         } catch (PDOException $e) {
             // mensagem para caso de erro na conexao
             echo "Erro na conexão com o banco de dados MySQL: " . $e->getMessage() . "<br>";
